@@ -6,7 +6,9 @@ This README file provides a detailed analysis of customer churn based on the pro
 
 ## Data Overview
 
-[cite_start]The analysis is based on the `Customer_Data.csv` file[cite: 1], which contains various attributes of customers. The dataset includes information on customer demographics, account details, and the services they use. [cite_start]The `SQL Queries.docx` file [cite: 2] contains queries used for initial data exploration.
+1.The analysis is based on the `Customer_Data.csv` file, which contains various attributes of customers. 
+2.The dataset includes information on customer demographics, account details, and the services they use. 
+3.The `SQL Queries.docx` file [cite: 2] contains queries used for initial data exploration.
 
 The dataset contains **31 columns** and a substantial number of customer records, providing a rich source of information for churn analysis.
 
@@ -17,25 +19,25 @@ The dataset contains **31 columns** and a substantial number of customer records
 ### 1. Customer Demographics and Churn
 
 - **Age:** Younger customers, particularly those in the **18-25 age group**, have a higher churn rate. This could be due to factors like lower brand loyalty or more price sensitivity.
-- [cite_start]**Marital Status:** Customers who are **not married** are more likely to churn compared to those who are married[cite: 1]. This suggests that married customers might have more stable life situations, leading to longer-term commitments with service providers.
+- **Marital Status:** Customers who are **not married** are more likely to churn compared to those who are married. This suggests that married customers might have more stable life situations, leading to longer-term commitments with service providers.
 
 ### 2. Contract and Tenure
 
-- [cite_start]**Contract Type:** Customers on a **Month-to-Month contract** have a significantly higher churn rate compared to those on One-Year or Two-Year contracts[cite: 2]. This is a critical insight, as it highlights the vulnerability of short-term contracts.
+-**Contract Type:** Customers on a **Month-to-Month contract** have a significantly higher churn rate compared to those on One-Year or Two-Year contracts. This is a critical insight, as it highlights the vulnerability of short-term contracts.
 - **Tenure:** Customers with a **shorter tenure** are more likely to churn. This is a common trend in subscription-based services, where new customers are still evaluating the service and have not yet developed strong loyalty.
 
 ### 3. Service Usage and Churn
 
-- [cite_start]**Internet Service:** Customers with **Fiber Optic** internet service have a higher churn rate compared to those with DSL[cite: 1]. This might be counterintuitive, as Fiber Optic is a premium service. However, it could be related to higher prices or service reliability issues in certain areas.
+-**Internet Service:** Customers with **Fiber Optic** internet service have a higher churn rate compared to those with DSL. This might be counterintuitive, as Fiber Optic is a premium service. However, it could be related to higher prices or service reliability issues in certain areas.
 - **Value Deals:** Customers on **Value Deals** have a lower churn rate, indicating that promotions and special offers are effective in retaining customers.
 
 ### 4. Churn Reasons
 
 The top reasons for churn, as indicated in the `Churn_Category` and `Churn_Reason` columns, are:
 
-- [cite_start]**Competitor Offers:** A large number of customers churned due to better offers from competitors, such as "competitor had better devices" or "competitor offered higher download speeds." [cite: 1]
-- [cite_start]**Dissatisfaction:** "Product dissatisfaction" and "service dissatisfaction" are also significant drivers of churn[cite: 1]. This points to issues with the quality of the service provided.
-- [cite_start]**Price:** "Price too high" and "long-distance charges" are frequently cited as reasons for leaving[cite: 1]. This highlights the importance of competitive pricing.
+- **Competitor Offers:** A large number of customers churned due to better offers from competitors, such as "competitor had better devices" or "competitor offered higher download speeds." 
+- **Dissatisfaction:** "Product dissatisfaction" and "service dissatisfaction" are also significant drivers of churn. This points to issues with the quality of the service provided.
+- **Price:** "Price too high" and "long-distance charges" are frequently cited as reasons for leaving. This highlights the importance of competitive pricing.
 
 ---
 
@@ -62,7 +64,7 @@ Based on the analysis, we recommend the following solutions to reduce customer c
 
 ## SQL Queries
 
-[cite_start]The following SQL queries were used for the initial data exploration[cite: 2]:
+The following SQL queries were used for the initial data exploration:
 
 ```sql
 -- Check Distinct Values for Gender
